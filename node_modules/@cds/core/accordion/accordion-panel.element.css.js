@@ -1,0 +1,5 @@
+import { css } from 'lit-element';
+/* @internal */
+export const styles = css `:host{--border-color: var(--cds-alias-object-border-color, var(--cds-global-color-construction-200, #cbd4d8));--border-width: var(--cds-alias-object-border-width-100, 0.05rem);--transition-duration: 200ms}.accordion-header-button{background:var(--cds-alias-object-opacity-0, rgba(0,0,0,0));border:0;padding:0;width:100%}.accordion-content{height:0;transition:transform height var(--transition-duration);transition-timing-function:cubic-bezier(0, 0.99, 0, 0.99);overflow-y:hidden}:host([expanded]) ::slotted(cds-accordion-header){--background: var(--cds-alias-object-interaction-background-selected, var(--cds-global-color-blue-50, #e6f7ff));--icon-transform: rotate(180deg)}:host([expanded]) .accordion-content{height:auto;border-top:var(--border-width) solid var(--border-color)}:host([disabled]) ::slotted(cds-accordion-header){--background: var(--cds-alias-object-opacity-0, rgba(0,0,0,0));--color: var(--cds-alias-status-disabled, var(--cds-global-color-construction-300, #aeb8bc));cursor:not-allowed}
+`;
+//# sourceMappingURL=accordion-panel.element.css.js.map

@@ -3,10 +3,24 @@ import 'zone.js/dist/zone-node';
 import { ngExpressEngine } from '@nguniversal/express-engine';
 import * as express from 'express';
 import { join } from 'path';
+import { readFileSync } from 'fs';
+
+const domino = require('domino');
+const DIST_FOLDER = join(process.cwd(), 'dist/ssr-test/browser');
+
+const template = readFileSync(join(DIST_FOLDER, 'index.html')).toString();
+const win = domino.createWindow(template);
+
+global['window'] = win;
+global['KeyboardEvent'] = win.KeyboardEvent;
+global['HTMLInputElement'] = win.HTMLInputElement;
+global['MouseEvent'] = win.MouseEvent;
+global['Event'] = win.Event;
 
 import { AppServerModule } from './src/main.server';
 import { APP_BASE_HREF } from '@angular/common';
 import { existsSync } from 'fs';
+
 
 // The Express app is exported so that it can be used by serverless Functions.
 export function app(): express.Express {

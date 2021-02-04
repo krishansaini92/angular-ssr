@@ -1,0 +1,5 @@
+import { css } from 'lit-element';
+/* @internal */
+export const styles = css `:host{--background: var(--cds-alias-object-opacity-0, rgba(0,0,0,0));--color: var(--cds-alias-object-interaction-color, var(--cds-global-color-construction-700, #3a4d55));--padding: var(--cds-global-space-2, 0.1rem);display:inline-block}.private-host{--icon-color: var(--color);padding:var(--padding);opacity:var(--opacity);background:var(--background);cursor:pointer}:host(:hover){--color: var(--cds-alias-object-interaction-color-hover, var(--cds-global-color-construction-1000, #1b2b32))}:host([disabled]){--color: var(--cds-alias-object-interaction-color-disabled, var(--cds-global-color-construction-300, #aeb8bc))}:host(:active) cds-icon{transform:translateY(var(--cds-global-space-1, 0.05rem))}cds-icon{--color: var(--icon-color);cursor:pointer}
+`;
+//# sourceMappingURL=close-button.element.css.js.map
